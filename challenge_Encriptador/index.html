@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="/imagenes/Logo.png" alt="logo de alura" class="logo">
+    </header>
+    <main>
+        <section class="seccion1">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="advertencia">
+                <img src="/imagenes/signo-de-exclamacion.png" alt="alerta">
+                <p class="informacion">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion2">
+            <textarea class="mensaje" readonly></textarea>
+            <div class="imagen">
+                <img src="/imagenes/Muñeco.png" alt="muneco">
+            </div>
+            <div class="contenedor-parrafo">
+                <h4 class="mensaje1">Ningún mensaje fue <br> encontrado</h4>
+                <p class="mensaje2">Ingresa el texto que desees Encriptar o <br>
+                desencriptar.</p>
+            </div>
+            <div class="boton">
+                <button class="btn-copiar" value="copiar" onclick="copiarText()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h6 class="footer">&copy; Erika Fernada Rodriguez - 2024</h6> 
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
